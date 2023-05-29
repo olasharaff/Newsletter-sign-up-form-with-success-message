@@ -58,8 +58,11 @@ form input[type="email"] {
 #errorMessage {
     position: absolute;
     left: 35%;
-    bottom: 20%;
+    bottom: 31.5%;
     color: orangered;
+    
+   
+
 }
 
 /* -----> SIDE IMAGE SECTION <----- */
