@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="box box1">
+      <h1>Stay updated!</h1>
+      <p class="ppp">Join 60,000+ product managers receiving monthly updates on:</p>
+      <p class="icon-p"><img src="assets/images/icon-list.svg" alt="SVG Image" class="icon"> Product discovery and
+        building what matters</p>
+      <p class="icon-p"><img src="assets/images/icon-list.svg" alt="SVG Image" class="icon"> Measuring to ensure updates
+        are a success</p>
+      <p class="icon-p"><img src="assets/images/icon-list.svg" alt="SVG Image" class="icon"> And much more!</p>
+
+      <!----------------- FORM SECTION ----------------------->
+
+      <form action="/" method="post">
+        <label for="InputEmail">Email address</label><br>
+        <input type="email" class="name" name="email" id="InputEmail" placeholder="email@company.com"><br>
+        <span id="errorMessage" class="error-message"></span>
+        <button class="btn" type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <div class="box box2">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="SVG Image" class="Image-icon">
+
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <p>Coded by <a href="https://twitter.com/olasharaff">Abdulrahman Sharaf</a>.</p>
+    </div>
+  </footer>
+
+  <!------------------- JavaScripts SECTION FOR INVALID --------------------->
+
+  <script>
+    const emailInput = document.getElementById("InputEmail");
+    const errorMessage = document.getElementById("errorMessage");
+
+    emailInput.addEventListener("input", function () {
+      errorMessage.textContent = "";
+      errorMessage.style.display = "none";
+    });
+
+    emailInput.addEventListener("invalid", function () {
+      if (emailInput.validity.valueMissing) {
+        errorMessage.textContent = "Email is required";
+      } else if (emailInput.validity.typeMismatch) {
+        errorMessage.textContent = "valid email required";
+
+        // -------> JavaScript CSS Customizations for Input validation
+        emailInput.style.color = "orangered";
+        emailInput.style.outline = ' none';
+        emailInput.style.border = 'none'
+        emailInput.style.background = 'rgb(187, 92, 58)';
+      }
+      errorMessage.style.display = "block";
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --lgth: 10px;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    margin-top: -35px;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+/* -------------------------> CONTAINER FLEX SECTION <---------------------- */
+.container {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 5rem auto;
+    margin-bottom: 0 !important;
+    padding: var(--lgth);
+    border-radius: var(--lgth);
+}
+
+
+/* -----> FORM SECTION <----- */
+
+form {
+    padding: 20px 0;
+}
+form label {
+    margin-top: 14px;
+    font-weight: bold;
+}
+form input {
+    margin-top: 5px;
+}
+form button {
+    margin-top: 14px;
+}
+form input[type="email"] {
+    width: 18.75rem;
+    padding: var(--lgth);
+    border-radius: 5px;
+
+}
+
+/* -----> JavaScript SECTION <----- */
+
+#errorMessage {
+    position: absolute;
+    left: 35%;
+    bottom: 20%;
+    color: orangered;
+}
+
+/* -----> SIDE IMAGE SECTION <----- */
+
+.Image-icon {
+    width: 100%;
+}
+
+/* -----> BOX1 & IT'S ICON SECTION <----- */
+
+.box1 {
+    width: 350px;
+    padding: var(--lgth) 45px var(--lgth) 45px;
+}
+.ppp {
+    padding: 30px 0 30px 0; 
+}
+.icon-p {
+    padding: 3px;
+}
+.icon-p {
+    height: 49px;
+    
+}
+.icon-p img {
+    height: 40%;
+   
+}
+.icon{
+    padding-right: 10px;
+}
+
+/* -----> MAIN PAGE BTN SECTION <----- */
+
+.btn{
+    padding: var(--lgth);
+    background-color: hsl(229, 41%, 11%);
+    border: none;
+    border-radius: var(--lgth);
+    color: white;
+    width: 20.3rem;
+    text-align: center;
+}
+.btn:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+
+/* -------------------------> SUCCESS.HTML CSS SECTION <---------------------- */
+
+.subscribed{
+    margin: auto;
+    width: 350px;
+    border-radius: var(--lgth);
+    background-color: white;
+    padding: 30px 28px;
+    margin-top: 10rem;
+}
+.subscribed h3{
+    font-size: 54px;
+    line-height: 49px;
+    padding: 20px 0;
+}
+
+/* -----> SUCCESS BTN CSS SECTION <----- */
+
+.btn1 {
+    padding: var(--lgth);
+    background-color: hsl(229, 41%, 11%);
+    border: none;
+    border-radius: var(--lgth);
+    color: white;
+    width: 22rem;
+    text-align: center;
+    margin: 20px 0;
+}
+.btn1:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+.svg-success{
+    width: 40px;
+    background-color: rgb(187, 92, 58);
+}
+/* -------------------------> FOOTER/ATTRIBUTION SECTION <---------------------- */
+footer{
+    margin: 25px 0;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 77%, 51%);
+}
+
+.attribution p {
+    padding: 2px 0;
+}
+
+
+/* -------------------------> MOBILE VIEW PORT <---------------------- */
+
+@media (max-width: 320px) {
+    .ppp{
+      margin-top: 20px;
+      
+    }
+    h1{
+        position: absolute;
+        bottom: 28.5%;
+    }
+}
